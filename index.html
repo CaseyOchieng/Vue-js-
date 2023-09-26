@@ -4,14 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="//https://unpkg.com/vue@3.0.2"></script>
+    <title>Vue Js Test</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 </head>
 
 <body>
-    <h1>hello Vue js</h1>
+    <div id="app">
+
+        <h1>{{ title }} -{{ author }}-{{ age }}</h1>
+        <button v-on:click="age++">Add Age</button>
+        <!-- This code snippet is written in Vue.js and adds an event listener to a button element. The v-on:click directive is used to listen for a click event on the button. When the button is clicked, the age variable is incremented by 1. -->
+    </div>
+    <script src="app.js"></script>
 
 </body>
-    <script src="app.js"></script>
+<!-- The code starts with a <meta charset="UTF-8"> tag.
+This is used to define the character encoding of the document.
+The code starts with a <meta name="viewport" content="width=device-width, initial-scale=1.0"> tag.
+This is used to specify how the page should be rendered in terms of size and scaling on different devices such as desktop computers, tablets, or mobile phones.
+The code starts with a title element that has an h1 element inside it which contains text "Vue Js Test".
+The v-on:click directive is written inside this h1 element and listens for clicks on the button below it by incrementing age when clicked.
+The code is written in Vue.js and adds an event listener to a button element.
+The v-on:click directive is used to listen for a click event on the button.
+When the button is clicked, the age variable is incremented by 1. -->
+
 </html>
